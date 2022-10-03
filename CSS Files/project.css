@@ -1,0 +1,306 @@
+/* Section 1 Header - Repeat */
+/* Section 2 Footer - Project Document*/
+
+.container-navbar-wrapper {
+  width: 1100px;
+  height: 122px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-simplify-content.project-page {
+  max-width: 1100px;
+  height: 1181px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-header.project-page {
+  padding-bottom: 20px;
+}
+
+.project-text.project-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 1100px;
+  height: 1000px;
+}
+
+.project-header-date {
+  width: 1100px;
+  height: 100px; 
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between;
+  background-color: aqua;
+}
+
+.project-date.project-page {
+  padding-top: 80px; 
+}
+
+.project-header.project-page {
+  height: 100px; 
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+} 
+
+.project-title.project-page {
+  width: 530px;
+  height: 70px;
+  color: #292e47;
+  font-family: "Roboto";
+  font-weight: 700px;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.project-date.project-page {
+  width: 255px;
+  height: 30px;
+  color: #d9d9d9;
+  font-family: "Roboto";
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #292e47;
+}
+
+.simplify-img-description {
+  width: 1100px;
+  height: 934px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.simplify-img img {
+  width: 1100px;
+  height: 680px;
+  margin-top: 100px;
+}
+
+.simplify-description.project-page {
+  width: 1100px;
+  height: 220px;
+  color: #6b7080;
+  font-family: "Roboto";
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #292e47;
+  gap: 30px;
+}
+
+.simplify-description.project-page p {
+  padding-top: 40px;
+}
+
+/* Section 3 Other Projects - Project Document */
+
+.other-projects-section-wrapper {
+  height: 700px;
+  width: 1100px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.other-projects-section-wrapper h2 {
+  font-size: 50px;
+  font-weight: 500;
+  width: 434px;
+  height: 47px;
+}
+
+.other-projects-container-cards {
+  width: 1100px;
+  height: 444px;
+  margin-top: 117px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 60px;
+}
+
+.project-cards {
+  width: 340px;
+  height: 444px;
+}
+
+.project-image img {
+  position: relative;
+  width: 340px;
+  height: 240px;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #292e47;
+  padding-top: 10px;
+}
+
+.project-description {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #6b708d;
+  padding-top: 20px;
+}
+
+.project-link {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #072ac8;
+  padding-top: 70px;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 200px;
+  padding-left: 10px;
+}
+
+.project-orbit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.project-purify-card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+.project-vectorify-card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 550px) {
+  /* Display None */
+
+  .body {
+    max-width: 550px;
+  }
+  .container-nav-links {
+    display: none;
+  }
+
+  .menu-button.nav-button {
+    display: none;
+  }
+
+  .container-navbar-wrapper {
+    width: 380px;
+    height: 122px;
+    margin-top: px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Section 2 - Simplify Project */
+
+  .project-text.project-page {
+    width: 380px;
+    height: 1000px; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+
+  .project-header.project-page {
+    width: 380px; 
+    height: 100px; 
+    padding-bottom: 100px;
+  }
+
+  .project-header-date {
+    width: 380px; 
+    height: 250px; 
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content:center 
+    background-color: aqua;
+  }
+
+  .simplify-img-description {
+    width: 380px; 
+    margin-bottom: 300px;  
+  }
+
+  .simplify-img img {
+    width: 380px; 
+    height: 380px; 
+    
+  }
+
+  .project-title.project-page {
+    width: 380px; 
+  }
+
+  .project-date.project-page {
+    width: 380px; 
+}
+
+.simplify-description.project-page {
+  width: 380px;
+  height: 400px; 
+
+}
+
+/* Section 3 - Other Projects */
+
+.other-projects-section-wrapper {
+  width: 380px;
+  height: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.other-projects-section-wrapper h2 {
+  font-size: 40px;
+  font-weight: 500;
+  width: 300px;
+  height: 47px;
+  text-align: center;
+}
+
+.other-projects-container-cards {
+  width: 380px;
+  height: 666px;
+  margin-top: 117px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+
+}
+
