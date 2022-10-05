@@ -1,69 +1,128 @@
 /* Section 1 Header - Repeat */
 /* Section 2 Footer - Project Document*/
 
-.container-navbar-wrapper {
-  width: 1100px;
-  height: 122px;
-  margin-left: auto;
-  margin-right: auto;
+body {
+  margin: 0px;
+  background-color: #f2f4fc;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  font-family: sans-serif;
 }
 
-.project-simplify-content.project-page {
-  max-width: 1100px;
-  height: 1181px;
+/*Section 1 Navbar */
+
+.container-navbar {
+  width: 1100px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-button.nav-button {
+  width: 150px;
+  height: 50px;
+  background-color: #002cf3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-button.contact-us {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container-nav-links {
+  display: flex;
+  gap: 100px;
+}
+
+.nav-link.nav-link1 {
+  width: 46px;
+  height: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #072ac8;
+  text-decoration: none;
+}
+
+.nav-link.nav-link2 {
+  width: 63px;
+  height: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #6b708d;
+  text-decoration: none;
+}
+
+.nav-link.nav-link3 {
+  width: 66px;
+  height: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #6b708d;
+  text-decoration: none;
+}
+
+.navbar-logo-img {
+  width: 60.53px;
+  height: 18.46px;
+}
+
+/* Section 2 - Simplify Project */
+
+.project-text.project-page {
+  width: 1100px;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.project-header.project-page {
-  padding-bottom: 20px;
-}
-
-.project-text.project-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 1100px;
-  height: 1000px;
-}
-
 .project-header-date {
   width: 1100px;
-  height: 100px; 
   display: flex;
   flex-direction: row;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
-  background-color: aqua;
-}
-
-.project-date.project-page {
-  padding-top: 80px; 
 }
 
 .project-header.project-page {
-  height: 100px; 
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
-} 
+}
 
 .project-title.project-page {
-  width: 530px;
-  height: 70px;
   color: #292e47;
   font-family: "Roboto";
-  font-weight: 700px;
+  font-weight: 1000px;
   font-size: 60px;
   line-height: 70px;
 }
 
 .project-date.project-page {
-  width: 255px;
-  height: 30px;
   color: #d9d9d9;
   font-family: "Roboto";
   font-weight: 400px;
@@ -72,19 +131,9 @@
   color: #292e47;
 }
 
-.simplify-img-description {
-  width: 1100px;
-  height: 934px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .simplify-img img {
   width: 1100px;
   height: 680px;
-  margin-top: 100px;
 }
 
 .simplify-description.project-page {
@@ -96,49 +145,45 @@
   font-size: 20px;
   line-height: 30px;
   color: #292e47;
-  gap: 30px;
-}
-
-.simplify-description.project-page p {
-  padding-top: 40px;
 }
 
 /* Section 3 Other Projects - Project Document */
 
-.other-projects-section-wrapper {
-  height: 700px;
+.project-section4-container {
   width: 1100px;
-  margin-top: 100px;
+  height: 560px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 150px;
 }
 
-.other-projects-section-wrapper h2 {
-  font-size: 50px;
+.project-section4-container h2 {
+  font-size: 30px;
   font-weight: 500;
-  width: 434px;
-  height: 47px;
 }
 
-.other-projects-container-cards {
+.project-container-cards {
   width: 1100px;
-  height: 444px;
-  margin-top: 117px;
+  height: 480px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding-top: 60px;
 }
 
 .project-cards {
   width: 340px;
-  height: 444px;
+  height: 480px;
+  background-color: #ffffff;
 }
 
 .project-image img {
-  position: relative;
   width: 340px;
   height: 240px;
 }
@@ -148,7 +193,6 @@
   font-weight: 500;
   line-height: 28px;
   color: #292e47;
-  padding-top: 10px;
 }
 
 .project-description {
@@ -156,7 +200,6 @@
   font-weight: 400;
   line-height: 25px;
   color: #6b708d;
-  padding-top: 20px;
 }
 
 .project-link {
@@ -164,7 +207,6 @@
   font-weight: 400;
   line-height: 25px;
   color: #072ac8;
-  padding-top: 70px;
 }
 
 .project-text {
@@ -172,17 +214,16 @@
   flex-direction: column;
   align-items: left;
   height: 200px;
-  padding-left: 10px;
 }
 
-.project-orbit-card {
+.project-simplify-card {
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: flex-start;
 }
 
-.project-purify-card {
+.project-dashcoin-card {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -196,12 +237,153 @@
   justify-content: flex-start;
 }
 
+/* Section 7 Call to Action - Subscribe */
+
+.subscriptions-container {
+  width: 1320px;
+  height: 550px;
+  background-color: #ffc600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscriptions-heading {
+  width: 500px;
+  height: 47px;
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 700px;
+  line-height: 46px;
+  color: #292e47;
+}
+
+.subscription-subtitle {
+  width: 500px;
+  height: 30px;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 150%;
+  color: #292e47;
+  text-align: center;
+}
+
+.email-wrapper {
+  width: 393px;
+  height: 45px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  padding: 20px;
+}
+
+.email-icon {
+  height: 32px;
+  width: 32px;
+  color: #292e47;
+}
+
+.email-text-field {
+  border: none;
+}
+
+.suscribe-button {
+  width: 198px;
+  height: 80px;
+  background-color: #072ac8;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 500px;
+  font-size: 17px;
+  line-height: 22px;
+  border: none;
+}
+
+.email-subscrition-inputs {
+  width: 800px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Section 8 Footer */
+
+.container-footer {
+  width: 1100px;
+  height: 112px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.company-info {
+  height: 112px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.footer-links {
+  width: 435px;
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 400px;
+  font-size: 17px;
+  line-height: 150%;
+  color: #6b708d;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 30px;
+}
+
+.footer-address {
+  width: 260px;
+  height: 52px;
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 400px;
+  line-height: 25px;
+  color: #6b708d;
+}
+
 @media screen and (max-width: 550px) {
   /* Display None */
 
   .body {
     max-width: 550px;
+    height: 100vh;
   }
+
   .container-nav-links {
     display: none;
   }
@@ -210,97 +392,248 @@
     display: none;
   }
 
-  .container-navbar-wrapper {
-    width: 380px;
-    height: 122px;
-    margin-top: px;
+  /* Section 1 NavBar */
+
+  .container-navbar {
+    width: 440px;
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Section 2 - Simplify Project  */
+
+  .project-text.project-page {
+    width: 440px;
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* Section 2 - Simplify Project */
-
-  .project-text.project-page {
-    width: 380px;
-    height: 1000px; 
-    margin-left: auto; 
-    margin-right: auto; 
+  .project-header-date {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 60px;
   }
 
   .project-header.project-page {
-    width: 380px; 
-    height: 100px; 
-    padding-bottom: 100px;
-  }
-
-  .project-header-date {
-    width: 380px; 
-    height: 250px; 
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content:center 
-    background-color: aqua;
-  }
-
-  .simplify-img-description {
-    width: 380px; 
-    margin-bottom: 300px;  
-  }
-
-  .simplify-img img {
-    width: 380px; 
-    height: 380px; 
-    
+    justify-content: center;
   }
 
   .project-title.project-page {
-    width: 380px; 
+    color: #292e47;
+    font-family: "Roboto";
+    font-weight: 1000px;
+    font-size: 50px;
+    line-height: 70px;
   }
 
   .project-date.project-page {
-    width: 380px; 
+    color: #d9d9d9;
+    font-family: "Roboto";
+    font-weight: 800px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #292e47;
+  }
+
+  .simplify-img img {
+    width: 380px;
+    height: 380px;
+  }
+
+  .simplify-description.project-page {
+    max-width: 380px;
+    height: 1000px;
+  }
+
+  .simplify-description.project-page p {
+    width: 360px;
+    color: #6b7080;
+    font-family: "Roboto";
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #292e47;
+    text-align: left;
+  }
+
+  /* Section 3 - Recent Projects  */
+
+  .project-section4-container {
+    max-width: 380px;
+    min-height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .project-section4-container h2 {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 40px;
+    font-weight: 1000;
+  }
+
+  .project-container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 380px;
+    margin-right: auto;
+    min-height: 1500px;
+  }
+
+  .project-cards {
+    background-color: #ffffff;
+    min-height: 500px;
+  }
+
+  /* Section 4 - Subscription  */
+
+  .project-section4-container {
+    width: 440px;
+    height: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-section4-container h2 {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 40px;
+    font-weight: 1000;
+    width: 380px;
+    height: 100%;
+  }
+
+  .project-container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    width: 380px;
+  }
+
+  .project-cards {
+    background-color: #ffffff;
+    height: 100%;
+  }
+
+  /* Section 5 -   */
+  .subscriptions-container {
+    width: 420px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+
+  .subscriptions-heading {
+    width: 380px;
+    height: 47px;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 700px;
+    color: #292e47;
+    text-align: center;
+  }
+
+  .subscription-subtitle {
+    width: 380px;
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #6b708d;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .email-subscrition-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 200px;
+  }
+
+  .email-wrapper {
+    width: 180px;
+    height: 50px;
+  }
+
+  .suscribe-button {
+    width: 220px;
+    height: 80px;
+  }
+
+  /* Section 5 - Footer  */
+
+  .footer-section {
+    width: 480px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 420px;
+    gap: 40px;
+  }
+
+  .company-info {
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
+
+  .footer-address {
+    text-align: center;
+  }
+
+  .footer-links {
+    width: 240px;
+    height: 300px;
+    padding-bottom: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-link {
+    color: #002cf3;
+  }
 }
-
-.simplify-description.project-page {
-  width: 380px;
-  height: 400px; 
-
-}
-
-/* Section 3 - Other Projects */
-
-.other-projects-section-wrapper {
-  width: 380px;
-  height: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.other-projects-section-wrapper h2 {
-  font-size: 40px;
-  font-weight: 500;
-  width: 300px;
-  height: 47px;
-  text-align: center;
-}
-
-.other-projects-container-cards {
-  width: 380px;
-  height: 666px;
-  margin-top: 117px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-
-
-}
-

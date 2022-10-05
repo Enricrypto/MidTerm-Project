@@ -1,146 +1,303 @@
-/* Section 1 Contact Form - Contact Page */
+/* Section 1 Navbar */
 
-.contact-form-email-container {
+.container-navbar {
   width: 1100px;
-  height: 660px;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  margin-left: 280px;
-  margin-top: 180px;
 }
 
-.email-phone-container {
+.menu-button.nav-button {
+  width: 150px;
+  height: 50px;
+  background-color: #002cf3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-button.contact-us {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container-nav-links {
+  display: flex;
+  gap: 100px;
+}
+
+.nav-link.nav-link1 {
+  width: 46px;
+  height: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #072ac8;
+  text-decoration: none;
+}
+
+.nav-link.nav-link2 {
+  width: 63px;
+  height: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #6b708d;
+  text-decoration: none;
+}
+
+.nav-link.nav-link3 {
+  width: 66px;
+  height: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 130%;
+  color: #6b708d;
+  text-decoration: none;
+}
+
+.navbar-logo-img {
+  width: 60.53px;
+  height: 18.46px;
+}
+
+/* Section 2 Contact Page */
+
+body > section.formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+  gap: 30px;
+}
+body > section.formulario > h1 {
+  font-size: 2.2rem;
+}
+body > section.formulario > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body > section.formulario > form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body > section.formulario > form > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input {
+  border: none;
+  background-color: rgba(107, 112, 141, 0.1);
+  min-width: 354px;
+  height: 70px;
+  padding-left: 15px;
+  font-size: 1rem;
+}
+label {
+  color: #6B708D;
+  font-size: 1.3rem;
+}
+form > div > textarea.text {
+  background-color: rgba(107, 112, 141, 0.1);
+  border: none;
+  padding-left: 15px;
+  min-height: 200px;
+  font-size: 1.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 10px;
+}
+button {
+  background-color: #072AC8;
+  color: #F2F4FC;
+  line-height: 80px;
+  min-width: 354px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+/* Section 3 Footer */
+
+.container-footer {
+  width: 1100px;
+  height: 112px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: 180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.container-inputs {
-  width: 1100px;
+.company-info {
+  height: 112px;
+  width: 300px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
+  padding-left: 20px;
 }
 
-.contact-us h1 {
-  width: 530px;
-  height: 70px;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 70px;
-}
-
-.contact-form-section {
-  width: 1100px;
-  height: 660px;
+.footer-links {
+  width: 435px;
+  height: 180px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  flex-wrap: wrap;
+  gap: 100px;
 }
 
-.full-name-form-section {
-  width: 1100px;
-  height: 110px;
-}
-
-.email-form-section {
-  width: 530px;
-  height: 110px;
-}
-
-.phone-form-section {
-  width: 530px;
-  height: 110px;
-}
-
-.message-form-section {
-  width: 1100px;
-  height: 240px;
-}
-
-.form-titles {
+.footer-link {
+  text-decoration: none;
   font-family: "Roboto";
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 70px;
+  font-weight: 400px;
+  font-size: 17px;
+  line-height: 150%;
   color: #6b708d;
 }
 
-.form-inputs {
-  border: none;
-  margin-top: 40px;
-  padding-left: 20px;
+.footer-logo img {
+  width: 100px;
+  height: 30px;
+}
+
+.footer-address {
+  width: 260px;
+  height: 52px;
   font-family: "Roboto";
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 400px;
   line-height: 25px;
+  color: #6b708d;
 }
 
-.full-name-text {
-  width: 300px;
-  height: 30px;
+@media screen and (max-width: 550px) {
+  /* Display None */
+
+  .body {
+    max-width: 550px;
+    height: 100vh;
+  }
+
+  /* Section 1 - Navbar */
+
+  .container-navbar {
+    width: 440px;
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container-nav-links {
+    display: none;
+  }
+
+  .menu-button.nav-button {
+    display: none;
+  }
+
+  /* Section 2 - Form */
+  body > section.formulario {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    margin-bottom: 150px;
+    padding-left: 0;
+}
+body > section.formulario > h1 {
+    font-size: 3.5rem;
+}
+body > section.formulario > form {
+    width: 100%;
+}
+body > section.formulario > form > div.row-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+body > section.formulario > form > div.row-text > div > input {
+    width: 530px;
+    padding-left: 15px;
+}
+body > section.formulario > form > div > input {
+    width: 1070px;
+}
+body > section.formulario > form > button {
+    border: none;
+    width: 1070px;
 }
 
-.email-text {
-  width: 71px;
-  height: 30px;
+  /* Section 8 - Footer  */
+
+  .footer-section {
+    width: 480px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 420px;
+    gap: 40px;
+  }
+
+  .company-info {
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
+
+  .footer-address {
+    text-align: center;
+  }
+
+  .footer-links {
+    width: 240px;
+    height: 300px;
+    padding-bottom: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer-link {
+    color: #002cf3;
+  }
 }
-
-.phone-text {
-  width: 71px;
-  height: 30px;
-}
-
-.message-text {
-  width: 170px;
-  height: 30px;
-}
-
-.full-name-input {
-  width: 1100px;
-  height: 70px;
-}
-
-.email-input {
-  width: 530px;
-  height: 70px;
-}
-
-.phone-input {
-  width: 530px;
-  height: 70px;
-}
-
-.message-input {
-  width: 1100px;
-  height: 200px;
-}
-
-.sumbit-btn {
-  width: 1100px;
-  height: 80px;
-  background-color: #072ac8;
-  color: #ffffff;
-  border: none;
-}
-
-.message-input.form-inputs {
-  padding-top: 20px;
-  font-family: "Roboto";
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 25px;
-}
-
-.footer-section-contact-page {
-  height: 242px;
-  width: 1440px;
-  margin-top: 300px;
-  margin-left: 170px;
-}
-
-

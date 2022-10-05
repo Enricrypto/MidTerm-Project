@@ -1,9 +1,7 @@
-@import "./project.css";
-@import "./contact.css";
-
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: content-box;
 }
 
 body {
@@ -16,21 +14,15 @@ body {
 
 /* section 1 - navbar */
 
-.container-navbar-wrapper {
+.container-navbar {
   width: 1100px;
-  height: 122px;
-  margin-top: 70px;
+  padding-top: 50px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.container-navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 1100px;
-  height: 52px;
 }
 
 .menu-button.nav-button {
@@ -98,19 +90,15 @@ body {
 
 /* section 2 - banner */
 
-.container-part2-wrapper {
-  height: 650px;
-  width: 1100px;
-  margin-top: 120px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#container-part-2 {
+.container-part-2 {
   height: 650px;
   max-width: 1100px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-part2-text {
@@ -122,8 +110,6 @@ body {
   justify-content: left;
   align-items: center;
   gap: 50px;
-  margin-top: 109px;
-  margin-bottom: 119px;
 }
 
 .heading-part2 {
@@ -213,15 +199,6 @@ body {
 
 /* section 3 - logos clients */
 
-.logos-container-wrapper {
-  width: 1300px;
-  height: 108px;
-  margin-top: 150px;
-  margin-bottom: 5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .grid-logos {
   width: 1100px;
   height: 96px;
@@ -229,47 +206,43 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  margin-left: 140px;
-}
-
-.logo-companies {
-  width: 150px;
-  height: 96px;
-  padding: 40px;
-}
-
-/* section 4 - recent projects banner */
-
-.recent-projects-section {
-  width: 1100px;
-  height: 560px;
-  margin-top: 150px;
+  gap: 30px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.projects-section-wrapper {
-  height: 700px;
-  width: 1100px;
+.logo-companies {
+  height: 96px;
 }
 
-.projects-section-wrapper h2 {
-  font-size: 50px;
+/* section 4 - recent projects banner */
+
+.project-section4-container {
+  width: 1100px;
+  height: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project-section4-container h2 {
+  font-size: 30px;
   font-weight: 500;
-  width: 250px;
-  height: 94px;
 }
 
 .project-container-cards {
   width: 1100px;
-  height: 444px;
-  margin-top: 117px;
+  height: 480px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding-top: 60px;
 }
 
 .project-cards {
@@ -288,7 +261,6 @@ body {
   font-weight: 500;
   line-height: 28px;
   color: #292e47;
-  padding-top: 10px;
 }
 
 .project-description {
@@ -296,7 +268,6 @@ body {
   font-weight: 400;
   line-height: 25px;
   color: #6b708d;
-  padding-top: 20px;
 }
 
 .project-link {
@@ -304,7 +275,6 @@ body {
   font-weight: 400;
   line-height: 25px;
   color: #072ac8;
-  padding-top: 70px;
 }
 
 .project-text {
@@ -312,7 +282,6 @@ body {
   flex-direction: column;
   align-items: left;
   height: 200px;
-  padding-left: 10px;
 }
 
 .project-simplify-card {
@@ -338,34 +307,22 @@ body {
 
 /* section 5 - testimony */
 
-.testimonial-section-wrapper {
-  height: 622px;
+.testimonial-container {
   width: 1320px;
+  height: 622px;
   background-color: #292e47;
-  margin-top: 250px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.testimonial-container {
-  position: relative;
-  width: 1300px;
-  height: 382px;
-  margin: 120px 120px;
+  margin-top: 200px;
 }
 
 .testimonial-text {
-  position: absolute;
-  width: 621px;
-  height: 382px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 80px;
-  margin-left: 225px;
-  margin-right: 300px;
-  margin-top: 120px;
+  height: 100%;
 }
 
 .testimonial-heading {
@@ -434,12 +391,8 @@ body {
   position: absolute;
   align-items: center;
   justify-content: space-between;
-  width: 1000px;
-  height: 500px;
   display: flex;
   flex-direction: row;
-  margin-left: 40px;
-  margin-top: 60px;
 }
 
 .emoji-top-left img {
@@ -478,18 +431,12 @@ body {
 
 /* section 6 - services */
 
-.services-wrapper {
-  height: 561px;
-  width: 1100px;
-  margin-top: 150px;
+.services-container {
+  max-width: 1100px;
+  height: 600px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.services-container {
-  width: 1100px;
-  height: 600px;
-  margin-bottom: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -579,23 +526,18 @@ body {
 
 /* Section 7 Call to Action - Subscribe */
 
-.subscription-section {
-  height: 550px;
-  width: 1320px;
-  background-color: #ffc600;
-  margin-top: 180px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .subscriptions-container {
   width: 1320px;
-  height: 622px;
+  height: 550px;
+  background-color: #ffc600;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 70px;
+  gap: 60px;
+  margin-top: 140px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscriptions-heading {
@@ -606,11 +548,10 @@ body {
   font-weight: 700px;
   line-height: 46px;
   color: #292e47;
-  text-align: center;
 }
 
 .subscription-subtitle {
-  width: 140px;
+  width: 500px;
   height: 30px;
   font-family: "Roboto";
   font-size: 20px;
@@ -636,8 +577,6 @@ body {
   height: 32px;
   width: 32px;
   color: #292e47;
-  margin-top: 5px;
-  margin-left: 2.5px;
 }
 
 .email-text-field {
@@ -667,14 +606,6 @@ body {
 
 /* Section 8 Footer */
 
-.footer-section {
-  height: 242px;
-  width: 1100px;
-  margin-top: 180px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .container-footer {
   width: 1100px;
   height: 112px;
@@ -682,6 +613,9 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: 180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .company-info {
@@ -691,29 +625,17 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  padding-left: 20px;
 }
 
 .footer-links {
   width: 435px;
-  height: 112px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer-links-top {
-  width: 500px;
+  height: 180px;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  gap: 100px;
-}
-
-.footer-links-bottom {
-  width: 500px;
-  display: flex;
-  justify-content: left;
+  align-items: center;
+  justify-content: stretch;
+  flex-wrap: wrap;
   gap: 100px;
 }
 
@@ -746,6 +668,7 @@ body {
 
   .body {
     max-width: 550px;
+    height: 100vh;
   }
   .container-nav-links {
     display: none;
@@ -773,44 +696,32 @@ body {
 
   /* Section 1 - Navbar */
 
-  .container-navbar-wrapper {
-    width: 480px;
-    height: 122px;
-    margin: 0px;
-  }
-
   .container-navbar {
+    width: 440px;
+    padding-top: 30px;
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1099.36px;
-    height: 52px;
-    margin-top: 30px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 60px;
   }
 
   /* Section 2 - Banner */
 
-  .container-part2-wrapper {
-    width: 480px;
-    height: 700px;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  #container-part-2 {
+  .container-part-2 {
+    max-width: 440px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    margin-top: 50px;
-    height: 200px;
+    justify-content: space-around;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
   }
 
   .container-part2-text {
@@ -819,6 +730,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 40px;
+  }
+
+  .container-part2-text h1 {
+    width: 340px;
+    text-align: center;
   }
 
   .heading-part2 {
@@ -848,88 +764,78 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .part2-images {
-    position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 450px;
+    margin-left: auto;
   }
 
   .hero-image {
-    width: 400px;
-    height: 400px;
-    margin-top: 400px;
-    padding-right: 20px;
+    position: absolute;
+    max-width: 350px;
+    max-height: 400px;
   }
 
   /* Section 3 - Companies Logos  */
 
-  .logos-container-wrapper {
-    width: 480px;
-    height: 200px;
-    margin: 0px;
-    margin-top: 80px;
-  }
-
   .grid-logos {
-    width: 400px;
-    height: 96px;
+    max-width: 340px;
+    height: 300px;
     margin: 0px;
-    padding-left: 20px;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
   }
 
   /* Section 4 - Recent Projects  */
 
-  .projects-section-wrapper {
+  .project-section4-container {
+    max-width: 380px;
+    min-height: 1500px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
-    margin: 0px;
-    margin-top: 50px;
+    align-items: center;
+    justify-content: space-around;
   }
 
-  .projects-section-wrapper h2 {
+  .project-section4-container h2 {
     text-align: center;
     font-family: "Roboto";
     font-size: 40px;
     font-weight: 1000;
-    width: 300px;
-    margin-left: 90px;
   }
 
   .project-container-cards {
     display: flex;
     flex-direction: column;
-    margin: 0px;
-    height: 900px;
-    width: 480px;
+    align-items: center;
+    justify-content: center;
+    max-width: 380px;
+    margin-right: auto;
+    min-height: 1500px;
   }
 
   .project-cards {
     background-color: #ffffff;
+    min-height: 500px;
   }
 
   /* Section 5 - Testimony  */
 
-  .testimonial-section-wrapper {
-    height: 400px;
-    width: 480px;
-    margin: 0px;
-    margin-top: 1020px;
-    background-color: #292e47;
-  }
-
   .testimonial-container {
-    margin: 0px;
-    width: 420px;
-  }
-
-  .testimonial-text {
-    margin: 0px;
-    width: 480px;
+    width: 440px;
+    height: 400px;
+    background-color: #292e47;
   }
 
   .testimonial-heading {
@@ -948,17 +854,12 @@ body {
 
   /* Section 6 - Services  */
 
-  .services-wrapper {
+  .services-container {
     margin: 0px;
-    width: 480px;
+    width: 440px;
     margin-top: 400px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .services-container {
-    margin: 0px;
-    width: 480px;
   }
 
   .services-heading {
@@ -970,7 +871,7 @@ body {
 
   .services-grid {
     height: 1000px;
-    width: 480px;
+    width: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -981,30 +882,35 @@ body {
 
   /* Section 7 - Subscription  */
 
-  .subscription-section {
-    margin: 0px;
-    width: 480px;
-    margin-top: 550px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .subscriptions-container {
-    margin: 0px;
     width: 420px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .subscriptions-heading {
-    width: 300px;
+    width: 380px;
+    height: 47px;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 700px;
+    color: #292e47;
+    text-align: center;
   }
 
   .subscription-subtitle {
-    width: 300px;
+    width: 380px;
+    font-family: "Roboto";
+    font-size: 20px;
     color: #6b708d;
+    text-align: center;
+    margin-left: 0px;
   }
 
   .email-subscrition-inputs {
@@ -1015,8 +921,8 @@ body {
   }
 
   .email-wrapper {
-    width: 220px;
-    height: 80px;
+    width: 180px;
+    height: 50px;
   }
 
   .suscribe-button {
@@ -1059,10 +965,10 @@ body {
     padding-bottom: 80px;
     margin-bottom: 60px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 40px;
   }
 
   .footer-link {
