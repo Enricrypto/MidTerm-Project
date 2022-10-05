@@ -1,5 +1,12 @@
 /* Section 1 Navbar */
 
+body {
+  margin: 0;
+  background-color: #f2f4fc;
+  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
+}
+
 .container-navbar {
   width: 1100px;
   padding-top: 50px;
@@ -34,6 +41,11 @@
 .container-nav-links {
   display: flex;
   gap: 100px;
+}
+
+
+.burguer-btn {
+  display: none;
 }
 
 .nav-link.nav-link1 {
@@ -74,61 +86,84 @@
   height: 18.46px;
 }
 
-/* Section 2 Contact Page */
+/* Section 2 Email Form */
 
-body > section.formulario {
+.formulario {
   display: flex;
   flex-direction: column;
-  padding: 30px 30px;
-  gap: 30px;
+  gap: 20px;
+  width: 1100px; 
+  margin: auto; 
+  margin-top: 100px; 
 }
-body > section.formulario > h1 {
-  font-size: 2.2rem;
+.formulario h1 {
+  font-size: 30px;
 }
-body > section.formulario > form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-body > section.formulario > form > div {
+.form-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-body > section.formulario > form > div > div {
+.name {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 48%; 
+}
+
+.tel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 48%; 
+}
+
+.email-tel {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+  width: 100%; 
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 input {
   border: none;
   background-color: rgba(107, 112, 141, 0.1);
-  min-width: 354px;
-  height: 70px;
+  height: 60px;
   padding-left: 15px;
-  font-size: 1rem;
+  font-size: 15px;
 }
+
 label {
-  color: #6B708D;
-  font-size: 1.3rem;
+  color: #6b708d;
+  font-size: 20px;
 }
-form > div > textarea.text {
-  background-color: rgba(107, 112, 141, 0.1);
+
+.text {
   border: none;
+  background-color: rgba(107, 112, 141, 0.1);
   padding-left: 15px;
-  min-height: 200px;
-  font-size: 1.1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding-top: 10px;
+  font-size: 15px;
+  padding-top: 20px; 
+  font-family: "Roboto";
 }
-button {
-  background-color: #072AC8;
-  color: #F2F4FC;
+
+.button {
+  background-color: #072ac8;
+  color: #f2f4fc;
   line-height: 80px;
-  min-width: 354px;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 20px;
   margin-top: 15px;
 }
 
@@ -202,7 +237,7 @@ button {
   /* Section 1 - Navbar */
 
   .container-navbar {
-    width: 440px;
+    width: 350px;
     padding-top: 30px;
     padding-left: 40px;
     margin-left: auto;
@@ -222,48 +257,90 @@ button {
   }
 
   /* Section 2 - Form */
-  body > section.formulario {
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+  
+  .formulario {
     display: flex;
     flex-direction: column;
-    margin-top: 180px;
-    margin-bottom: 150px;
-    padding-left: 0;
-}
-body > section.formulario > h1 {
-    font-size: 3.5rem;
-}
-body > section.formulario > form {
-    width: 100%;
-}
-body > section.formulario > form > div.row-text {
+    padding: 50px 50px;
+    margin-top: 10px; 
+    width: 300px;
+  }
+  .formulario h1 {
+    font-size: 30px;
+  }
+  .form-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-body > section.formulario > form > div.row-text > div > input {
-    width: 530px;
-    padding-left: 15px;
-}
-body > section.formulario > form > div > input {
-    width: 1070px;
-}
-body > section.formulario > form > button {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .email-tel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input {
     border: none;
-    width: 1070px;
-}
+    background-color: rgba(107, 112, 141, 0.1);
+    height: 60px;
+    padding-left: 15px;
+    font-size: 15px;
+    width: 280px
+  }
+  
+  .email input {
+    width: 280px;  
+  }
+
+  .tel input {
+    width: 300px;  
+  }
+
+  label {
+    color: #6b708d;
+    font-size: 20px;
+  }
+  
+  .text {
+    border: none;
+    background-color: rgba(107, 112, 141, 0.1);
+    padding-left: 15px;
+    font-size: 20px;
+    padding-top: 20px; 
+  }
+  
+  .button {
+    background-color: #072ac8;
+    color: #f2f4fc;
+    line-height: 80px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+  }
 
   /* Section 8 - Footer  */
-
-  .footer-section {
-    width: 480px;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .container-footer {
     display: flex;
@@ -273,6 +350,9 @@ body > section.formulario > form > button {
     height: 300px;
     width: 420px;
     gap: 40px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .company-info {
@@ -286,15 +366,12 @@ body > section.formulario > form > button {
   }
 
   .footer-links {
-    width: 240px;
-    height: 300px;
-    padding-bottom: 80px;
-    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 40px;
+    justify-content: center;
   }
 
   .footer-link {

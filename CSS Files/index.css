@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0px;
   padding: 0px;
@@ -48,6 +50,10 @@ body {
 .container-nav-links {
   display: flex;
   gap: 100px;
+}
+
+.burguer-btn {
+  display: none;
 }
 
 .nav-link.nav-link1 {
@@ -240,7 +246,7 @@ body {
   height: 480px;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; 
   justify-content: space-between;
   gap: 20px;
 }
@@ -281,6 +287,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: left;
+  padding-top: 30px; 
+  padding-left: 10px;  
   height: 200px;
 }
 
@@ -314,6 +322,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 200px;
+  position: relative;
 }
 
 .testimonial-text {
@@ -387,32 +396,36 @@ body {
   line-height: 15px;
 }
 
-.emojis {
-  position: absolute;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: row;
-}
-
 .emoji-top-left img {
   width: 150px;
   height: 150px;
+  position: absolute;
+  top: 0;
+  left: 140px;
 }
 
 .emoji-bottom-left img {
   width: 150px;
   height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 140px;
 }
 
 .emoji-top-right img {
   width: 150px;
   height: 150px;
+  position: absolute;
+  top: 0;
+  right: 140px;
 }
 
 .emoji-bottom-right img {
   width: 150px;
   height: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 140px;
 }
 
 .emojis-left {
@@ -697,9 +710,8 @@ body {
   /* Section 1 - Navbar */
 
   .container-navbar {
-    width: 440px;
+    max-width: 300px;
     padding-top: 30px;
-    padding-left: 40px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -718,7 +730,7 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 0px;
-    margin-top: 0px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
@@ -735,6 +747,10 @@ body {
   .container-part2-text h1 {
     width: 340px;
     text-align: center;
+  }
+
+  .burguer-btn {
+    display: block;
   }
 
   .heading-part2 {
@@ -833,7 +849,7 @@ body {
   /* Section 5 - Testimony  */
 
   .testimonial-container {
-    width: 440px;
+    max-width: 420px;
     height: 400px;
     background-color: #292e47;
   }
@@ -855,11 +871,14 @@ body {
   /* Section 6 - Services  */
 
   .services-container {
-    margin: 0px;
-    width: 440px;
+    max-width: 440px;
     margin-top: 400px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .services-heading {
@@ -871,7 +890,7 @@ body {
 
   .services-grid {
     height: 1000px;
-    width: 440px;
+    width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -883,7 +902,7 @@ body {
   /* Section 7 - Subscription  */
 
   .subscriptions-container {
-    width: 420px;
+    max-width: 420px;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -932,13 +951,6 @@ body {
 
   /* Section 8 - Footer  */
 
-  .footer-section {
-    width: 480px;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .container-footer {
     display: flex;
     flex-direction: column;
@@ -947,12 +959,18 @@ body {
     height: 300px;
     width: 420px;
     gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .company-info {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer-address {
@@ -960,15 +978,14 @@ body {
   }
 
   .footer-links {
-    width: 240px;
-    height: 300px;
-    padding-bottom: 80px;
-    margin-bottom: 60px;
+    width: 400px; 
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
+    gap: 80px; 
+    padding-left: 20px;
   }
 
   .footer-link {

@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Circle Agency - Contact Us</title>
   </head>
   <body>
@@ -26,6 +30,7 @@
         <a href="#" class="nav-link nav-link2">Projects</a>
         <a href="#" class="nav-link nav-link3">Services</a>
       </nav>
+      <div class="burguer-btn"><i class="fa solid fa-bars"></i></div>
       <div class="menu-button nav-button">
         <a class="menu-button contact-us">Contact Us</a>
       </div>
@@ -33,35 +38,36 @@
     <!-- Section 2 Email Form -->
     <section class="formulario">
       <h1>Contact Us</h1>
-      <form action="">
-          <div>
-              <label for="name">Full Name*</label>
-              <input type="text" placeholder="Enter your full name" id="name" />
+      <form id="form" class="form-container">
+        <div class="name">
+          <label>Full Name *</label>
+          <input type="text" placeholder="Enter your full name" id="name" />
+        </div>
+        <div class="email-tel">
+          <div class="email">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your e-mail" id="email" />
           </div>
-          <div class="row-text">
-              <div>
-                  <label for="email">Email</label>
-                  <input type="email" placeholder="Enter your e-mail" id="email" />
-              </div>
-              <div>
-                  <label for="tel">Phone</label>
-                  <input type="tel" placeholder="Enter your phone" id="tel" />
-              </div>
+          <div class="tel">
+            <label for="tel">Phone</label>
+            <input type="tel" placeholder="Enter your phone" id="tel" />
           </div>
-          <div>
-              <label for="">Message</label>
-              <textarea
-                  class="text"
-                  name=""
-                  id="textarea"
-                  cols="30"
-                  rows="10"
-                  placeholder="Write your message here..."
-              ></textarea>
-          </div>
-          <div class="succes"></div>
-          <button id="#mybutton" type="submit">Submit</button>
+        </div>
+        <div class="message">
+          <label>Message</label>
+          <textarea
+            class="text"
+            name=""
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Write your message here..."
+          ></textarea>
+        </div>
+        <div class="succes"></div>
+        <button class="button" type="submit">Submit</button>
       </form>
+    </section>
     <!-- Section 3 footer  -->
     <div class="container-footer">
       <div class="company-info">
@@ -81,6 +87,6 @@
         <a class="footer-link" href="">Privacy Policy</a>
       </div>
     </div>
-    <script src="../index.js"></script>
+    <script src="../contact.js"></script>
   </body>
 </html>
