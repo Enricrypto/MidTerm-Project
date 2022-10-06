@@ -1,21 +1,55 @@
-/* Section 1 Navbar */
-
 body {
   margin: 0;
   background-color: #f2f4fc;
   font-family: "Roboto", sans-serif;
-  font-family: sans-serif;
 }
 
-.container-navbar {
+/* Section 1 Navbar */
+
+.navbar {
   width: 1100px;
-  padding-top: 50px;
+  min-height: 70px;
+  padding: 50px 24px 0px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #6b708d;
+}
+
+.nav-link.nav-link1 {
+  color: #072ac8;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 0px;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
 .menu-button.nav-button {
@@ -38,50 +72,7 @@ body {
   text-decoration: none;
 }
 
-.container-nav-links {
-  display: flex;
-  gap: 100px;
-}
-
-
-.burguer-btn {
-  display: none;
-}
-
-.nav-link.nav-link1 {
-  width: 46px;
-  height: 22px;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 130%;
-  color: #072ac8;
-  text-decoration: none;
-}
-
-.nav-link.nav-link2 {
-  width: 63px;
-  height: 22px;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 130%;
-  color: #6b708d;
-  text-decoration: none;
-}
-
-.nav-link.nav-link3 {
-  width: 66px;
-  height: 22px;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 130%;
-  color: #6b708d;
-  text-decoration: none;
-}
-
-.navbar-logo-img {
+.navbar-logo {
   width: 60.53px;
   height: 18.46px;
 }
@@ -92,9 +83,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 1100px; 
-  margin: auto; 
-  margin-top: 100px; 
+  width: 1100px;
+  margin: auto;
+  margin-top: 100px;
 }
 .formulario h1 {
   font-size: 30px;
@@ -113,21 +104,21 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 48%; 
+  width: 48%;
 }
 
 .tel {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 48%; 
+  width: 48%;
 }
 
 .email-tel {
-  display: flex; 
-  flex-direction: row; 
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  width: 100%; 
+  width: 100%;
 }
 
 .message {
@@ -154,7 +145,7 @@ label {
   background-color: rgba(107, 112, 141, 0.1);
   padding-left: 15px;
   font-size: 15px;
-  padding-top: 20px; 
+  padding-top: 20px;
   font-family: "Roboto";
 }
 
@@ -165,18 +156,18 @@ label {
   text-align: center;
   font-size: 20px;
   margin-top: 15px;
+  border: none;
 }
 
 /* Section 3 Footer */
 
 .container-footer {
   width: 1100px;
-  height: 112px;
+  height: 600px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 180px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -234,12 +225,15 @@ label {
     height: 100vh;
   }
 
+  .menu-button.nav-button {
+    display: none;
+  }
+
   /* Section 1 - Navbar */
 
-  .container-navbar {
-    width: 350px;
+  .navbar {
+    max-width: 300px;
     padding-top: 30px;
-    padding-left: 40px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -248,22 +242,46 @@ label {
     align-items: center;
   }
 
-  .container-nav-links {
-    display: none;
+  .nav-link.nav-link1 {
+    color: #6b708d;
   }
 
-  .menu-button.nav-button {
-    display: none;
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 90px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    transition: 0.7s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0px;
+  }
+
+  .nav-link:hover {
+    color: red;
   }
 
   /* Section 2 - Form */
-  
+
   .formulario {
     display: flex;
     flex-direction: column;
     padding: 50px 50px;
-    margin-top: 10px; 
-    width: 300px;
+    margin-top: 120px;
+    max-width: 280px;
   }
   .formulario h1 {
     font-size: 30px;
@@ -272,65 +290,72 @@ label {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 280px;
   }
   .name {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 280px;
   }
+
+  .label {
+    font-size: 18px;
+  }
+
   .email {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 280px;
   }
-  
+
   .tel {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 280px;
   }
-  
+
   .email-tel {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
   .message {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 297px;
   }
-  
+
   input {
     border: none;
     background-color: rgba(107, 112, 141, 0.1);
     height: 60px;
     padding-left: 15px;
     font-size: 15px;
-    width: 280px
-  }
-  
-  .email input {
-    width: 280px;  
+    width: 280px;
   }
 
-  .tel input {
-    width: 300px;  
+  .email input {
+    width: 280px;
   }
 
   label {
     color: #6b708d;
     font-size: 20px;
   }
-  
+
   .text {
     border: none;
     background-color: rgba(107, 112, 141, 0.1);
     padding-left: 15px;
-    font-size: 20px;
-    padding-top: 20px; 
+    font-size: 15px;
+    padding-top: 20px;
   }
-  
+
   .button {
     background-color: #072ac8;
     color: #f2f4fc;
@@ -338,6 +363,7 @@ label {
     text-align: center;
     font-size: 20px;
     margin-top: 15px;
+    width: 297px;
   }
 
   /* Section 8 - Footer  */
@@ -347,18 +373,21 @@ label {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 300px;
-    width: 420px;
+    height: 500px;
+    max-width: 420px;
     gap: 40px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .company-info {
+    width: 370px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 400px;
+    justify-content: center;
+    padding: 0px;
   }
 
   .footer-address {
@@ -366,12 +395,13 @@ label {
   }
 
   .footer-links {
+    width: 370px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
   }
 
   .footer-link {

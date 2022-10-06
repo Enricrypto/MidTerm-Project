@@ -1,15 +1,9 @@
-    function getData() {
+/* Fetch */
+
+function getData() {
     return fetch("https://jsonplaceholder.typicode.com/posts/").then((response) =>
     response.json()
   );
-
-  /* const cards = [];
-        for (let id = 1; id <= 3; id++) {
-            const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
-            const data = await response.json();
-            cards.push(data);
-            return (cards);
-        }*/
 }
 
 function printData() {
@@ -26,3 +20,17 @@ function printData() {
 }
 
 printData();
+
+const hamburger = document.querySelector('.hamburger'); 
+const navMenu = document.querySelector('.nav-menu'); 
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active'); 
+  navMenu.classList.toggle('active'); 
+}) 
+
+document.querySelectorAll('.nav-link').forEach(elem => elem.addEventListener('click', () => {
+  hamburger.classList.remove('active'); 
+  navMenu.classList.remove('active'); 
+}))
+  

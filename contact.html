@@ -19,42 +19,49 @@
   </head>
   <body>
     <!-- Section 1 Navbar -->
-    <div class="container-navbar">
-      <div class="navbar-logo">
-        <a href="#" class="navbar-logo-img"
-          ><img src="./project-assets/logos/circle.svg" alt="logo-circle"
+    <header>
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">
+          <img src="./project-assets/logos/circle.svg" alt="logo-circle"
         /></a>
-      </div>
-      <nav class="container-nav-links">
-        <a href="/" class="nav-link nav-link1">Home</a>
-        <a href="#" class="nav-link nav-link2">Projects</a>
-        <a href="#" class="nav-link nav-link3">Services</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link nav-link1">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./project.html" class="nav-link nav-link2">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-link3">Services</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <i class="fa solid fa-bars"></i>
+        </div>
+        <div class="menu-button nav-button">
+          <a class="menu-button contact-us">Contact Us</a></div>
       </nav>
-      <div class="burguer-btn"><i class="fa solid fa-bars"></i></div>
-      <div class="menu-button nav-button">
-        <a class="menu-button contact-us">Contact Us</a>
-      </div>
-    </div>
+    </header>
     <!-- Section 2 Email Form -->
     <section class="formulario">
       <h1>Contact Us</h1>
       <form id="form" class="form-container">
         <div class="name">
-          <label>Full Name *</label>
+          <label class="label">Full Name *</label>
           <input type="text" placeholder="Enter your full name" id="name" />
         </div>
         <div class="email-tel">
           <div class="email">
-            <label>Email</label>
+            <label class="label">Email</label>
             <input type="email" placeholder="Enter your e-mail" id="email" />
           </div>
           <div class="tel">
-            <label for="tel">Phone</label>
+            <label class="label">Phone</label>
             <input type="tel" placeholder="Enter your phone" id="tel" />
           </div>
         </div>
         <div class="message">
-          <label>Message</label>
+          <label class="label">Message</label>
           <textarea
             class="text"
             name=""
@@ -64,7 +71,6 @@
             placeholder="Write your message here..."
           ></textarea>
         </div>
-        <div class="succes"></div>
         <button class="button" type="submit">Submit</button>
       </form>
     </section>
