@@ -62,6 +62,10 @@ li {
   justify-content: center;
 }
 
+.menu-button.nav-button:hover {
+  background-color: rgb(0, 0, 118);
+}
+
 .menu-button.contact-us {
   font-family: "Roboto";
   font-style: normal;
@@ -157,6 +161,11 @@ label {
   font-size: 20px;
   margin-top: 15px;
   border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(0, 0, 118);
 }
 
 /* Section 3 Footer */
@@ -201,6 +210,10 @@ label {
   font-size: 17px;
   line-height: 150%;
   color: #6b708d;
+}
+
+.footer-link:hover {
+  color: red;
 }
 
 .footer-logo img {
@@ -393,9 +406,5 @@ label {
     justify-content: center;
     flex-wrap: wrap;
     gap: 80px;
-  }
-
-  .footer-link {
-    color: #002cf3;
   }
 }

@@ -68,6 +68,10 @@ li {
   justify-content: center;
 }
 
+.menu-button.nav-button:hover {
+  background-color: rgb(0, 0, 118);
+}
+
 .menu-button.contact-us {
   font-family: "Roboto";
   font-style: normal;
@@ -142,6 +146,10 @@ li {
   line-height: 130%;
   color: #ffffff;
   text-decoration: none;
+}
+
+.div-get-in-touch:hover {
+  background-color: rgb(0, 0, 118);
 }
 
 .see-work-button {
@@ -579,6 +587,7 @@ li {
 
 .email-text-field {
   border: none;
+  width: 300px;
 }
 
 .suscribe-button {
@@ -591,6 +600,11 @@ li {
   font-size: 17px;
   line-height: 22px;
   border: none;
+  cursor: pointer;
+}
+
+.suscribe-button:hover {
+  background-color: rgb(0, 0, 118);
 }
 
 .email-subscrition-inputs {
@@ -644,6 +658,10 @@ li {
   font-size: 17px;
   line-height: 150%;
   color: #6b708d;
+}
+
+.footer-link:hover {
+  color: red;
 }
 
 .footer-logo img {
@@ -1012,9 +1030,5 @@ li {
     justify-content: center;
     flex-wrap: wrap;
     gap: 80px;
-  }
-
-  .footer-link {
-    color: #002cf3;
   }
 }

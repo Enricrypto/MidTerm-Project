@@ -66,6 +66,10 @@ li {
   justify-content: center;
 }
 
+.menu-button.nav-button:hover {
+  background-color: rgb(0, 0, 118);
+}
+
 .menu-button.contact-us {
   font-family: "Roboto";
   font-style: normal;
@@ -294,6 +298,7 @@ li {
 
 .email-text-field {
   border: none;
+  width: 300px;
 }
 
 .suscribe-button {
@@ -306,6 +311,11 @@ li {
   font-size: 17px;
   line-height: 22px;
   border: none;
+  cursor: pointer;
+}
+
+.suscribe-button:hover {
+  background-color: rgb(0, 0, 118);
 }
 
 .email-subscrition-inputs {
@@ -359,6 +369,10 @@ li {
   font-size: 17px;
   line-height: 150%;
   color: #6b708d;
+}
+
+.footer-link:hover {
+  color: red;
 }
 
 .footer-logo img {
