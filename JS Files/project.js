@@ -11,7 +11,7 @@ function printData() {
   getData().then((response) => {
     document.querySelector(
       `.simplify-description`
-    ).innerHTML = `${response[0].title}`;
+    ).innerHTML = `${response[1].body}`;
   });
 }
 
